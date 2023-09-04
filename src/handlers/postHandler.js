@@ -10,18 +10,18 @@ const postHandler = async () => {
         if (movieData) {
             const movieDom = createMovie(movieData);
             dom.postersContainer.append(movieDom);
+            location.reload();
         }
-        location.reload();
     } else {
         const element = document.querySelector('.selected');
         const id = Number(element.id);
-
         const newMovie = {
             title: dom.formTitle.value,
             src: dom.formImage.value
         }
 
         await updateMovies(id, newMovie);
+        location.reload();
     }
 
 }
