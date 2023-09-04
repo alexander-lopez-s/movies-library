@@ -5,24 +5,25 @@ import updateMovies from "../../apis/updateMovies.js"
 
 
 const postHandler = async () => {
-    if(dom.formButton.innerHTML === "Create Poster"){
+    if (dom.formButton.innerHTML === "Create Poster") {
         const movieData = await postMovies();
-        if(movies){
-             const movieDom = createMovie(movieData);
-             dom.postersContainer.append(movieDom);
+        if (movies) {
+            const movieDom = createMovie(movieData);
+            dom.postersContainer.append(movieDom);
         }
+        location.reload();
     } else {
-      const element = document.querySelector('.selected');
-      const id = Number(element.id);
+        const element = document.querySelector('.selected');
+        const id = Number(element.id);
 
-      const newMovie = {
-          title: dom.formTitle.value,
-          src: dom.formImage.value
-      }
+        const newMovie = {
+            title: dom.formTitle.value,
+            src: dom.formImage.value
+        }
 
-      await updateMovies(id, newMovie);
+        await updateMovies(id, newMovie);
     }
- 
+
 }
 
 export default postHandler;
