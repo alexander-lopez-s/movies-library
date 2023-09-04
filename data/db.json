@@ -1,8 +1,8 @@
 {
   "movies": [
-    { "id": 1, "title": "joker", "src": "./assets/joker.jpg" },
-    { "id": 2, "title": "Brave Heart", "src": "./assets/braveHeart.jpeg" },
-    { "id": 3, "title": "Cat Women", "src": "./assets/catwomen.webp" },
-    { "id": 4, "title": "Brave Heart", "src": "./assets/braveHeart.jpeg" }
+    { "id": 1, "title": "Poltergeist", "src": "./assets/poltergeist.jpg" },
+    { "id": 2, "title": "The Grudge", "src": "./assets/grudge.jpg" },
+    { "id": 3, "title": "Us", "src": "./assets/us.jpg" },
+    { "id": 4, "title": "Human Centipede", "src": "./assets/human-centipede.jpg" }
   ]
 }
