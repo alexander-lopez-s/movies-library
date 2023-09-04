@@ -1,8 +1,24 @@
 {
   "movies": [
-    { "id": 1, "title": "Poltergeist", "src": "./assets/poltergeist.jpg" },
-    { "id": 2, "title": "The Grudge", "src": "./assets/grudge.jpg" },
-    { "id": 3, "title": "Us", "src": "./assets/us.jpg" },
-    { "id": 4, "title": "Human Centipede", "src": "./assets/human-centipede.jpg" }
+    {
+      "title": "The Grudge",
+      "src": "assets/grudge.jpg",
+      "id": 1
+    },
+    {
+      "title": "Avengers 2",
+      "src": "https://i.etsystatic.com/13367669/r/il/db21fd/2198543930/il_570xN.2198543930_4qne.jpg",
+      "id": 7
+    },
+    {
+      "title": "The Conjuring 1",
+      "src": "https://m.media-amazon.com/images/I/81ZpWSeRbVL._AC_UF894,1000_QL80_.jpg",
+      "id": 8
+    },
+    {
+      "title": "Titanic",
+      "src": "https://img.buzzfeed.com/buzzfeed-static/static/2022-04/4/20/asset/0f12255e2129/sub-buzz-817-1649105149-10.jpg",
+      "id": 9
+    }
   ]
 }
