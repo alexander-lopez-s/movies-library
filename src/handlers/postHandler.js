@@ -7,7 +7,7 @@ import updateMovies from "../../apis/updateMovies.js"
 const postHandler = async () => {
     if (dom.formButton.innerHTML === "Create Poster") {
         const movieData = await postMovies();
-        if (movies) {
+        if (movieData) {
             const movieDom = createMovie(movieData);
             dom.postersContainer.append(movieDom);
         }
