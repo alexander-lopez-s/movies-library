@@ -1,5 +1,4 @@
 import deleteMovie from "../../apis/deleteMovies.js";
-import updateMovie from "../../apis/updateMovies.js";
 import dom from "../dom.js";
 
 const createMovie = (movie) => {
@@ -23,6 +22,7 @@ const createMovie = (movie) => {
   deleteButton.addEventListener('click', (e) => {
     e.preventDefault();
     deleteMovie(movie.id);
+    location.reload();
   });
 
   // Create an update button element
@@ -35,7 +35,6 @@ const createMovie = (movie) => {
     dom.formTitle.value = movie.title;
     dom.formImage.value = movie.src;
     movieElement.classList.add('selected');
-
   });
 
   movieElement.appendChild(image);
