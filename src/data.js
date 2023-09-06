@@ -1,4 +1,4 @@
 const data = {
-    baseUrl: 'http://localhost:5000/movies'
+    baseUrl: 'https://github.com/cristobal-lopez/movies-library'
 };
 export default data;

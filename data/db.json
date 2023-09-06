@@ -26,9 +26,14 @@
       "id": 10
     },
     {
-      "title": "Test",
+      "title": "The Nun 2",
       "src": "https://resizing.flixster.com/PCe0qjSEf3QVAISG1Gm2qB-KWAA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgxZjAxZThmLTBhZWYtNGEzZi1iMjczLTk5ODFjZTNiM2EzYy53ZWJw",
       "id": 11
+    },
+    {
+      "title": "Dead Silence",
+      "src": "https://upload.wikimedia.org/wikipedia/en/0/0b/Dead_silence.jpg",
+      "id": 12
     }
   ]
 }
