@@ -1,4 +1,4 @@
 const data = {
-    baseUrl: 'https://github.com/cristobal-lopez/movies-library/movies'
+    baseUrl: 'https://my-json-server.typicode.com/cristobal-lopez/movies-library/movies'
 };
 export default data;
