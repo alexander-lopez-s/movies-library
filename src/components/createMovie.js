@@ -33,6 +33,7 @@ const createMovie = (movie) => {
     dom.formTitle.value = movie.title;
     dom.formImage.value = movie.src;
     movieElement.classList.add('selected');
+    location.reload();
   });
 
   movieElement.appendChild(image);

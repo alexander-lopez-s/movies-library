@@ -7,7 +7,7 @@ const postMovies = async () => {
     formData.src = dom.formImage.value;
 
     try {
-        const response = await fetch("http://localhost:5000/movies", {
+        const response = await fetch("https://my-json-server.typicode.com/cristobal-lopez/movies-library/movies", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
