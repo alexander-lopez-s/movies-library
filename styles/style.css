@@ -120,3 +120,23 @@ button[type="submit"]:hover {
     cursor: pointer;
     margin-left: 10px;
   }
+
+  /* Add transitions to the buttons and images */
+.delete-button,
+.update-button,
+img {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Scale and add shadow on button hover */
+.delete-button:hover,
+.update-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slightly scale and add shadow on image hover */
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
