@@ -34,6 +34,22 @@
       "title": "Dead Silence",
       "src": "https://upload.wikimedia.org/wikipedia/en/0/0b/Dead_silence.jpg",
       "id": 12
+    },
+    {
+      "title": "Human Centipede",
+      "src": "assets/human-centipede.jpg",
+      "id": 13
+    },
+    {
+      "title": "Poltergeist",
+      "src": "assets/poltergeist.jpg",
+      "id": 14
+    },
+    {
+      "title": "Us",
+      "src": "assets/us.jpg",
+      "id": 15
     }
+
   ]
 }
