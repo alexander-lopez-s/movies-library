@@ -21,7 +21,6 @@ const createMovie = (movie) => {
   deleteButton.classList = "delete-button";
   deleteButton.addEventListener('click', () => {
     deleteMovie(movie.id);
-     location.reload()
   });
 
   // Create an update button element
