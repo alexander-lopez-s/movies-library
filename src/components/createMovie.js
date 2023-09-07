@@ -19,7 +19,8 @@ const createMovie = (movie) => {
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.classList = "delete-button";
-  deleteButton.addEventListener('click', () => {
+  deleteButton.addEventListener('click', (e) => {
+    e.preventDefault()
     deleteMovie(movie.id);
   });
 
