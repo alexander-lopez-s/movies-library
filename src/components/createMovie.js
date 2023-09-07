@@ -1,5 +1,5 @@
-import deleteMovie from "../../apis/deleteMovies.js";
 import dom from "../dom.js";
+import deleteMovieHandler from "../handlers/deleteMovieHandler.js";
 
 const createMovie = (movie) => {
   const movieElement = document.createElement("div");
@@ -19,17 +19,15 @@ const createMovie = (movie) => {
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.classList = "delete-button";
-  deleteButton.addEventListener('click', (e) => {
-    e.preventDefault()
-    deleteMovie(movie.id);
+  deleteButton.addEventListener('click', () => {
+    deleteMovieHandler(movie.id);
   });
 
   // Create an update button element
   const updateButton = document.createElement("button");
   updateButton.textContent = "Update";
   updateButton.classList = "update-button";
-  updateButton.addEventListener('click', (e) => {
-    e.preventDefault()
+  updateButton.addEventListener('click', () => {
     dom.formButton.innerHTML = 'Update movie';
     dom.formTitle.value = movie.title;
     dom.formImage.value = movie.src;
