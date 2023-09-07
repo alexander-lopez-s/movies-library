@@ -19,8 +19,7 @@ const createMovie = (movie) => {
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.classList = "delete-button";
-  deleteButton.addEventListener('click', (e) => {
-    e.preventDefault();
+  deleteButton.addEventListener('click', () => {
     deleteMovie(movie.id);
   });
 
@@ -33,7 +32,6 @@ const createMovie = (movie) => {
     dom.formTitle.value = movie.title;
     dom.formImage.value = movie.src;
     movieElement.classList.add('selected');
-    location.reload();
   });
 
   movieElement.appendChild(image);
