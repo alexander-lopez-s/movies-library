@@ -22,15 +22,13 @@ const createMovie = (movie) => {
   deleteButton.addEventListener('click', (e) => {
     e.preventDefault();
     deleteMovie(movie.id);
-    location.reload();
   });
 
   // Create an update button element
   const updateButton = document.createElement("button");
   updateButton.textContent = "Update";
   updateButton.classList = "update-button";
-  updateButton.addEventListener('click', (e) => {
-    e.preventDefault();
+  updateButton.addEventListener('click', () => {
     dom.formButton.innerHTML = 'Update movie';
     dom.formTitle.value = movie.title;
     dom.formImage.value = movie.src;

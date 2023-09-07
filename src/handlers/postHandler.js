@@ -10,7 +10,6 @@ const postHandler = async () => {
         if (movieData) {
             const movieDom = createMovie(movieData);
             dom.postersContainer.append(movieDom);
-            location.reload();
         }
     } else {
         const element = document.querySelector('.selected');
@@ -21,7 +20,6 @@ const postHandler = async () => {
         }
 
         await updateMovies(id, newMovie);
-        location.reload();
     }
 
 }
